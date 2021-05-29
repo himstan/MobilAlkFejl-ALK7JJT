@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MobilAlkFejl</string>
+    <string name="sales_lead_status">Sales Lead Status</string>
+    <string name="sales_lead_type">Sales Lead Type</string>
+    <string name="sales_lead_name">Sales Lead Name</string>
+    <string name="sales_lead_priority">Sales Lead Priority</string>
+    <string name="sales_lead_rating">Sales Lead Rating</string>
+    <string name="add_sales_lead">Add Sales Lead</string>
+    <string name="create">Create</string>
+    <string name="modify_sales_lead">Modify Sales Lead</string>
+    <string name="modify">Modify</string>
+    <string name="add">Add</string>
+</resources>

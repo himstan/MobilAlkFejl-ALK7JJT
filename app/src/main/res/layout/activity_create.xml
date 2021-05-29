@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateActivity">
+
+    <Spinner
+        android:id="@+id/salesLeadStatus"
+        android:layout_width="246dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="169dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusView"
+        tools:ignore="MissingConstraints"
+        android:entries="@array/status_values"/>
+
+    <TextView
+        android:id="@+id/statusView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/sales_lead_status"
+        app:layout_constraintBottom_toTopOf="@+id/salesLeadStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salesLeadPriority"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/salesLeadType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="15dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/sales_lead_type"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/ratingView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salesLeadName"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/salesLeadName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="100dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/sales_lead_name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/salesLeadType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/salesLeadPriority"
+        android:layout_width="246dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/statusView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priorityView"
+        tools:ignore="MissingConstraints"
+        android:entries="@array/priority_values"/>
+
+    <TextView
+        android:id="@+id/priorityView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="150dp"
+        android:text="@string/sales_lead_priority"
+        app:layout_constraintBottom_toTopOf="@+id/salesLeadPriority"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salesLeadRating"
+        tools:ignore="MissingConstraints" />
+
+    <RatingBar
+        android:id="@+id/salesLeadRating"
+        android:layout_width="243dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/priorityView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingView" />
+
+    <TextView
+        android:id="@+id/ratingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="150dp"
+        android:text="@string/sales_lead_rating"
+        app:layout_constraintBottom_toTopOf="@+id/salesLeadRating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salesLeadType"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="81dp"
+        android:text="@string/add_sales_lead"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/salesLeadName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="81dp"
+        android:onClick="addSalesLead"
+        android:text="@string/create"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salesLeadStatus" />
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="166dp"
+        android:gravity="center_vertical"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "320815285733",
+    "project_id": "mobilalkjfejl-alk7jt",
+    "storage_bucket": "mobilalkjfejl-alk7jt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320815285733:android:9d2228b07784f4ef389b0c",
+        "android_client_info": {
+          "package_name": "hu.szte.mobilalkfejl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320815285733-1b1u5r2d8cbgde0lo1j0pcaqjcgilq9s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hu.szte.mobilalkfejl",
+            "certificate_hash": "6d73a5f1c401b90aab892cca7730e4364c872670"
+          }
+        },
+        {
+          "client_id": "320815285733-qr5ce9q6gur37vlhl23ip1mfojc6nrog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPyvawzponx0AmyJ5UVd7ep4Rlfj-1Ljk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320815285733-qr5ce9q6gur37vlhl23ip1mfojc6nrog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
